@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gala del Deporte - Quart de Poblet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .shadow-text { text-shadow: 2px 2px 4px rgba(0,0,0,.7); }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex items-center gap-6 min-h-28">
+      <div class="flex items-center flex-shrink-0">
+        <a href="#inicio" data-view="view-inicio" class="nav-link">
+          <img
+            src="https://i.postimg.cc/8krVCkKk/GALA-DEL-DEPORTE.png"
+            alt="Logo Gala del Deporte"
+            class="h-20 md:h-24 max-w-[180px] md:max-w-[230px] object-contain"
+            onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+          />
+        </a>
+      </div>
+
+      <div class="hidden md:flex flex-1 items-center justify-center gap-x-3 gap-y-2 text-sm lg:text-base flex-wrap">
+        <a href="#inicio" class="text-gray-600 hover:text-orange-600 font-medium nav-link whitespace-nowrap" data-view="view-inicio">Inicio</a>
+        <a href="#bienvenida" class="text-gray-600 hover:text-orange-600 font-medium nav-link whitespace-nowrap" data-view="bienvenida">Bienvenida</a>
+        <a href="#programa" class="text-gray-600 hover:text-orange-600 font-medium nav-link whitespace-nowrap" data-view="programa">Programa</a>
+        <a href="#deporte-mujer" class="text-gray-600 hover:text-orange-600 font-medium nav-link whitespace-nowrap" data-view="deporte-mujer">Deporte y Mujer</a>
+        <a href="#categorias" class="text-gray-600 hover:text-orange-600 font-medium nav-link whitespace-nowrap" data-view="categorias">Protagonistas</a>
+        <a href="#protagonistas" class="text-gray-600 hover:text-orange-600 font-medium nav-link whitespace-nowrap" data-view="protagonistas">Homenajes</a>
+        <a href="#mejores-deportistas" class="text-gray-600 hover:text-orange-600 font-medium nav-link whitespace-nowrap" data-view="mejores-deportistas">Mejores Deportistas</a>
+        <a href="#galeria-post" class="text-gray-600 hover:text-orange-600 font-medium nav-link whitespace-nowrap" data-view="galeria-post">Galería Post-Evento</a>
+      </div>
+
+      <div class="md:hidden ml-auto">
+        <button id="mobile-menu-button" class="text-gray-600 focus:outline-none" aria-label="Abrir menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+      <a href="#inicio" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-medium nav-link" data-view="view-inicio">Inicio</a>
+      <a href="#bienvenida" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-medium nav-link" data-view="bienvenida">Bienvenida</a>
+      <a href="#programa" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-medium nav-link" data-view="programa">Programa</a>
+      <a href="#deporte-mujer" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-medium nav-link" data-view="deporte-mujer">Deporte y Mujer</a>
+      <a href="#categorias" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-medium nav-link" data-view="categorias">Protagonistas</a>
+      <a href="#protagonistas" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-medium nav-link" data-view="protagonistas">Homenajes</a>
+      <a href="#mejores-deportistas" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-medium nav-link" data-view="mejores-deportistas">Mejores Deportistas</a>
+      <a href="#galeria-post" class="block px-6 py-3 text-gray-600 hover:bg-gray-50 font-medium nav-link" data-view="galeria-post">Galería Post-Evento</a>
+    </div>
+  </header>
+
+  <main>
+    <div id="view-inicio" class="page-view">
+      <section id="inicio" class="relative bg-gray-900 text-white py-24 md:py-32" style="background-image:url('https://i.postimg.cc/MKbb0RPL/P7A3432.jpg');background-size:cover;background-position:center;background-blend-mode:overlay;background-color:rgba(0,0,0,.5);">
+        <div class="container mx-auto px-6 text-center z-10 relative">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight shadow-text">Gala del Deporte 2026</h1>
+          <p class="text-2xl md:text-3xl font-light mb-8 shadow-text">Quart de Poblet</p>
+          <p class="text-lg md:text-xl mb-12 max-w-2xl mx-auto shadow-text">Celebrando el esfuerzo, la dedicación y el talento de nuestros deportistas.</p>
+          <a href="#evento" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105 shadow-lg">Descubre Más</a>
+        </div>
+      </section>
+
+      <section id="evento" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">La Gran Noche del Deporte</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">Un evento para reconocer y premiar el talento, la dedicación constante y las trayectorias más destacadas del deporte en Quart de Poblet.</p>
+          </div>
+          <div class="flex flex-wrap -mx-4 items-center">
+            <div class="w-full md:w-1/2 px-4 mb-8 md:mb-0"><img src="https://i.postimg.cc/cHwGqw4q/Gala-del-Deporte-2024-2.webp" alt="Imagen de la gala del deporte anterior" class="rounded-lg shadow-2xl w-full" /></div>
+            <div class="w-full md:w-1/2 px-4">
+              <p class="text-gray-600 mb-4 text-base md:text-lg leading-relaxed">La Gala del Deporte es el homenaje cumbre a la pasión y al esfuerzo de nuestra comunidad. Una velada única diseñada para poner en valor la constancia, el espíritu de superación y las grandes trayectorias que definen la historia de nuestro deporte local.</p>
+              <p class="text-gray-600 mb-4 text-base md:text-lg leading-relaxed">Este año, la gala tendrá lugar el <strong>3 de julio</strong> en el <strong>Auditori Molí de Vila</strong>. Contaremos con la presencia de autoridades, deportistas de élite invitados y muchas sorpresas.</p>
+              <p class="text-gray-600 text-base md:text-lg leading-relaxed">¡No te pierdas la oportunidad de ser parte de este sentido reconocimiento a la dedicación y al legado deportivo local!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="programa-inicio" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Programa del Evento</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto">La escaleta de una noche inolvidable.</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+            <div class="bg-gray-50 rounded-xl shadow-2xl p-8 flex items-center justify-center">
+              <img
+                src="https://i.postimg.cc/8krVCkKk/GALA-DEL-DEPORTE.png"
+                alt="Logo Gala del Deporte"
+                class="w-full max-w-md h-auto object-contain"
+              />
+            </div>
+
+            <div class="max-w-2xl mx-auto w-full">
+              <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+                <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">18.30 - Recepción y Photocall</h3>
+                <p class="text-gray-600">Llegada de asistentes, deportistas e invitados. Fotos en el photocall oficial.</p>
+              </div>
+
+              <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+                <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">19.00 - Inicio de la Gala</h3>
+                <p class="text-gray-600">Discurso de bienvenida y primeras entregas de premios.</p>
+              </div>
+
+              <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+                <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">19.30 - Actuaciones y sorpresas</h3>
+                <p class="text-gray-600">Grandes actuaciones de deportistas locales y otras sorpresas.</p>
+              </div>
+
+              <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+                <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">20.00 - Entrega Premios Principales</h3>
+                <p class="text-gray-600">Conocemos a los mejores deportistas del año.</p>
+              </div>
+
+              <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+                <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">20.30 - Clausura de la Gala y agradecimientos</h3>
+                <p class="text-gray-600">Cierre de la Gala y agradecimientos por parte de las autoridades.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="galeria-inicio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Galería Post-Evento</h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">Revive los mejores momentos de la Gala. Contenido disponible después del evento.</p>
+            <a href="#" class="inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105 shadow-lg">
+              Ver fotos de la Gala
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="patrocinadores" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+          <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Con el apoyo de</h2></div>
+          <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70">
+            <img src="https://i.postimg.cc/zXRtx8Bw/Coca-Cola-1210.jpg" alt="Logo Coca-Cola" class="h-20 w-auto object-contain rounded-md" />
+            <img src="https://i.postimg.cc/4xgDtm5y/CAIXA-POPULAR-logo-2-e1540851705661.jpg" alt="Logo Caixa Popular" class="h-20 w-auto object-contain rounded-md" />
+            <img src="https://i.postimg.cc/d0p6XypD/logo-verde.png" alt="Logo Verde" class="h-20 w-auto object-contain rounded-md" />
+            <img src="https://i.postimg.cc/MGj1SKC5/quart-pe.jpg" alt="Logo Quart PE" class="h-20 w-auto object-contain rounded-md" />
+          </div>
+        </div>
+      </section>
+
+      <footer id="contacto" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+          <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-1/3 mb-8 md:mb-0"><h4 class="text-2xl font-semibold mb-4">Contacto</h4><p class="mb-2">Servei Municipal d'Esports</p><p class="mb-2">Ayuntamiento de Quart de Poblet</p><p class="mb-2">Dirección: Avinguda Antic Regne de València, 100, 46930, Quart de Poblet, Valencia</p><p class="mb-2">Teléfono: 961 52 24 41</p><p>Email: atencio.esports@quartdepoblet.org</p></div>
+            <div class="w-full md:w-1/3 mb-8 md:mb-0 text-center"><img src="https://i.postimg.cc/W3nP5pmD/Logo-CE-1.png" alt="Logo Servei d'Esports Quart de Poblet" class="h-16 mx-auto mb-4 rounded-md object-contain" /><img src="https://i.postimg.cc/prGpGDcc/Logo-Ayto-3.png" alt="Logo Ayuntamiento de Quart de Poblet" class="h-16 mx-auto rounded-md object-contain" /></div>
+            <div class="w-full md:w-1/3 text-left md:text-right"><h4 class="text-2xl font-semibold mb-4">Síguenos</h4><div class="flex md:justify-end space-x-4"><a href="https://www.facebook.com/esportsqdp/?locale=es_ES" target="_blank" rel="noopener noreferrer" class="hover:opacity-80">Facebook</a><a href="https://x.com/esportsqdp" target="_blank" rel="noopener noreferrer" class="hover:opacity-80">X</a><a href="https://www.instagram.com/quartciutatesportiva/" target="_blank" rel="noopener noreferrer" class="hover:opacity-80">Instagram</a></div></div>
+          </div>
+          <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400 text-sm"><p>&copy; 2026 Ayuntamiento de Quart de Poblet. Todos los derechos reservados.</p></div>
+        </div>
+      </footer>
+    </div>
+
+    <section id="bienvenida" class="py-20 bg-gray-50 page-view hidden">
+      <div class="container mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Bienvenida Institucional</h2><p class="text-lg text-gray-700 max-w-3xl mx-auto">Mensajes de invitación de nuestros representantes.</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16"><div class="bg-white p-6 rounded-lg shadow-lg"><h3 class="text-2xl font-semibold text-gray-800 mb-4">Mensaje de la Alcaldesa</h3><div class="aspect-video bg-gray-200 rounded-md flex items-center justify-center"><span class="text-gray-500">[Espacio para el vídeo]</span></div></div><div class="bg-white p-6 rounded-lg shadow-lg"><h3 class="text-2xl font-semibold text-gray-800 mb-4">Mensaje del Concejal de Deportes</h3><div class="aspect-video bg-gray-200 rounded-md flex items-center justify-center"><span class="text-gray-500">[Espacio para el vídeo]</span></div></div></div><div class="grid grid-cols-1 md:grid-cols-2 gap-8"><div class="bg-white p-6 rounded-lg shadow-lg"><h3 class="text-2xl font-semibold text-gray-800 mb-4">Carta de la Alcaldesa</h3><p class="text-gray-600">[...Espacio para el texto de la carta institucional...]</p></div><div class="bg-white p-6 rounded-lg shadow-lg"><h3 class="text-2xl font-semibold text-gray-800 mb-4">Carta del Concejal de Deportes</h3><p class="text-gray-600">[...Espacio para el texto de la carta institucional...]</p></div></div></div>
+    </section>
+
+    <section id="programa" class="py-20 bg-white page-view hidden">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Programa del Evento</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">La escaleta de una noche inolvidable.</p>
+        </div>
+
+        <div class="max-w-2xl mx-auto mb-14">
+          <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+            <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+            <h3 class="text-xl font-semibold text-gray-800 mb-1">18.30 - Recepción y Photocall</h3>
+            <p class="text-gray-600">Llegada de asistentes, deportistas e invitados. Fotos en el photocall oficial.</p>
+          </div>
+
+          <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+            <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+            <h3 class="text-xl font-semibold text-gray-800 mb-1">19.00 - Inicio de la Gala</h3>
+            <p class="text-gray-600">Discurso de bienvenida y primeras entregas de premios.</p>
+          </div>
+
+          <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+            <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+            <h3 class="text-xl font-semibold text-gray-800 mb-1">19.30 - Actuaciones y sorpresas</h3>
+            <p class="text-gray-600">Grandes actuaciones de deportistas locales y otras sorpresas.</p>
+          </div>
+
+          <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+            <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+            <h3 class="text-xl font-semibold text-gray-800 mb-1">20.00 - Entrega Premios Principales</h3>
+            <p class="text-gray-600">Conocemos a los mejores deportistas del año.</p>
+          </div>
+
+          <div class="border-l-4 border-orange-500 ml-4 pl-8 py-4 relative">
+            <span class="absolute -left-4 top-4 w-8 h-8 bg-orange-500 rounded-full border-4 border-white"></span>
+            <h3 class="text-xl font-semibold text-gray-800 mb-1">20.30 - Clausura de la Gala y agradecimientos</h3>
+            <p class="text-gray-600">Cierre de la Gala y agradecimientos por parte de las autoridades.</p>
+          </div>
+        </div>
+
+        <div class="max-w-5xl mx-auto">
+          <img
+            src="https://i.postimg.cc/8krVCkKk/GALA-DEL-DEPORTE.png"
+            alt="Logo Gala del Deporte"
+            class="w-full max-w-md mx-auto h-auto rounded-xl shadow-2xl object-contain bg-white p-8"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="deporte-mujer" class="py-20 bg-white page-view hidden">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mesa Redonda: Deporte y Mujer</h2><p class="text-lg text-gray-700 max-w-3xl mx-auto">El evento será el jueves 2 de julio a las 18.00h en el Auditori Molí de Vila (La apertura de puertas empezará a partir de las 17.30h).</p></div>
+        <div class="max-w-4xl mx-auto mb-12"><h3 class="text-2xl font-semibold text-gray-800 mb-4">Una mesa redonda de grandes figuras y referentes del deporte femenino</h3><p class="text-gray-600 leading-relaxed">El deporte femenino es hoy un reflejo de superación, talento y liderazgo que redefine la sociedad. Esta mesa redonda tiene como objetivo reunir a grandes referentes de nuestro deporte para visibilizar sus logros, debatir sobre los desafíos actuales de la mujer en la élite y trazar las líneas maestras hacia una igualdad real y efectiva en el ámbito deportivo.</p></div>
+        <h3 class="text-2xl font-semibold text-gray-800 text-center mb-8">Ponentes</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-5xl mx-auto">
+          <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/2S5PNnc7/almudena.jpg" alt="Foto de Almudena Cid" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover object-center shadow-md" />
+            <h4 class="text-xl font-semibold mb-2 text-gray-900">Almudena Cid</h4>
+            <p class="text-gray-600 leading-relaxed">Una de las grandes leyendas del deporte español, célebre por ser la única gimnasta rítmica en la historia que ha disputado cuatro finales olímpicas consecutivas: Atlanta 1996, Sídney 2000, Atenas 2004 y Pekín 2008, obteniendo el diploma olímpico en las dos últimas.</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/q7G0x27D/Paloma-del-rio.jpg" alt="Foto de Paloma del Río" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover object-center shadow-md" />
+            <h4 class="text-xl font-semibold mb-2 text-gray-900">Paloma del Río</h4>
+            <p class="text-gray-600 leading-relaxed">Legendaria periodista deportiva española y voz inconfundible de los deportes minoritarios en España tras más de 35 años en RTVE, donde narró con un estilo riguroso y didáctico disciplinas como la gimnasia y el patinaje artístico. A lo largo de su carrera ha cubierto un récord de 16 Juegos Olímpicos y ha ocupado cargos directivos en la televisión pública, consolidándose como una pionera que abrió camino a las mujeres en el periodismo deportivo.</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/MGGxtvjH/Maria-Perez.jpg" alt="Foto de María Pérez" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover object-center shadow-md" />
+            <h4 class="text-xl font-semibold mb-2 text-gray-900">María Pérez</h4>
+            <p class="text-gray-600 leading-relaxed">Atleta española especializada en la disciplina de marcha atlética, consagrada como una de las figuras más importantes de la historia del atletismo español. Se convirtió en la reina indiscutible de la marcha mundial al proclamarse doble campeona del mundo en 2023, en las distancias de 20 km y 35 km, y posteriormente tocar el cielo olímpico en los Juegos Olímpicos de París 2024, donde conquistó dos medallas: la medalla de plata en la prueba individual de 20 km y la medalla de oro en el relevo mixto.</p>
+          </div>
+
+          <div class="bg-gray-50 p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/155rMS5C/Silvia-final.jpg" alt="Foto de Silvia Mesa" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover object-center shadow-md" style="transform:rotate(0deg);" />
+            <h4 class="text-xl font-semibold mb-2 text-gray-900">Silvia Mesa</h4>
+            <p class="text-gray-600 leading-relaxed">Exjugadora de baloncesto española que, con sus 2,06 metros de estatura, posee el récord histórico de ser la jugadora más alta del baloncesto nacional. Formada en el programa Siglo XXI, la pívot valenciana compitió durante dos décadas en la élite, incluyendo la liga universitaria de EE. UU., la selección española y clubes como el Dorna Godella o el Cadí La Seu, hasta su retirada en 2010 debido a las lesiones, tras lo cual se formó como fisioterapeuta para seguir vinculada al ámbito deportivo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categorias" class="py-20 bg-gray-50 page-view hidden">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Protagonistas</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">Reconocimiento institucional a personas y entidades que han dejado una huella especial en el deporte de Quart de Poblet.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/yNGz6zvz/Escudos-clubes-(1).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Pau Reig Rodrigo"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Pau Reig Rodrigo</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Por su larga trayectoria organizando encuentros, jornadas sociales, cenas, convivencias y ser una pieza clave en el funcionamiento del club; gracias en buena parte a su trabajo, a pesar del gran crecimiento del club, la cohesión del grupo está o intacta o mejor que nunca.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/hGZKJm4H/Escudos-clubes.png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Sección Femenina (Patricia Flores Córdoba)"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Sección Femenina (Patricia Flores Córdoba)</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Por su trayectoria, la sección Femenina ha sido, es y será para el Club Alianza, un pilar fundamental del proyecto donde su representación es una de las prioridades. Tras disputar diferentes competiciones a nivel escolar, sénior provincial, sénior autonómico y esta temporada ser las protagonistas de la 2ª edición del torneo Alianza siendo finalistas contra el equipo Femenino Bisontes Castellón de segunda división nacional</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/zDK1N6hs/Escudos-clubes-(2).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Carmen Cano Cano"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Carmen Cano Cano</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Por la gran labor realizada al frente de la secretaría del Club Atletismo Quart, por las horas dedicadas a la gestión del club, todo de manera desinteresada y siempre predispuesta a colaborar en eventos realizados. Y porque sin ella el club no sería lo que es hoy en día, desde el club queremos realizar este pequeño homenaje a nuestra compañera Carmen.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/GpVZwxmy/Escudos-clubes-(3).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Manuel García Sanz &quot;Manolo&quot;"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Manuel García Sanz &quot;Manolo&quot;</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Manolo es una persona fundamental en el CBM Quart y en su crecimiento. Su implicación constante, su capacidad de trabajo y su actitud siempre proactiva han sido motores imprescindibles para consolidar proyectos, impulsar iniciativas y fortalecer nuestra comunidad deportiva. Enamorado del balonmano, ha sabido contagiar ilusión, compromiso y sentido de pertenencia a jugadores, familias y colaboradores. Siempre dispuesto a ayudar, cercano y generoso, destaca no solo por su dedicación incansable, sino también por su gran corazón.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/pdw11VsL/Escudos-clubes-(4).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Florentino Herruzo Fernández"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Florentino Herruzo Fernández</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Por ser su Presidente Honorífico y el mejor ejemplo a seguir, por sus campeonatos ganados en 2.024 y 2.025, por pasear el Nombre de Quart de Poblet en tus maillots por todos los pueblos de Valencia, por ser un ciclista que sabe donde debe estar en todo momento, cuando hay que tirar del pelotón y cuando hay que esperar a los rezagados, por su sonrisa siempre presente y por sus consejos. GRANDE TINO!!!</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/zv075qFC/Escudos-clubes-(5).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Víctor Rocher Ricart"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Víctor Rocher Ricart</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Víctor Rocher, jugador que llegó al Club en el 2001 fichado para jugar en Territorial la máxima Categoría del Frontenis en Valencia, Llegando dos veces a conseguir el tercer puesto por equipos en la clasificación de Territorial y dos temporadas quedando entre los 5 clasificados del Ranking individual de la Categoría. Puntero, jugador rápido y muy competitivo. Comprometido con el club y un ejemplo a seguir para los jugadores jóvenes y alumnos de la escuela.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/L8ZtQtwG/Escudos-clubes-(6).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de José Javier Andújar Ojeda"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">José Javier Andújar Ojeda</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Su trabajo diario, esfuerzo silencioso e implicación personal son la base sobre la que se construyen los logros del club y el desarrollo de nuestros deportistas. Gracias a su dedicación constante y profesionalidad, el club avanza cada día con firmeza y pasión. Este homenaje es un gesto sencillo, pero lleno de gratitud, porque sabemos que detrás de cada éxito hay personas como José Javier, que trabajan con compromiso y deportistas. Gracias por ser ejemplo y por hacer posible que nuestro deporte crezca!</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/rwCmpztg/Escudos-clubes-(7).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Emma Penadés Alcaide"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Emma Penadés Alcaide</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">La homenajeada es Emma Penadés Alcaide por su trayectoria como patinadora, demostrando esfuerzo y constancia siendo una patinadora destacada a nivel autonómico en su categoría. Además, es una figura destacada dentro del club siendo un ejemplo a seguir para el resto de compañeros y compañeras.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/50mV3X8k/Escudos-clubes-(22).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Manuel Monje Martínez"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Manuel Monje Martínez</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Por su larga trayectoria en el Club, porque el deporte es su estilo de vida, por hacer que siga la tradición de la pilota de generación en generación, por ser referente en perseverancia, por amar nuestro deporte autóctono y llevarlo allá donde va y por hacer de la pilota más que un deporte, una pasión.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/J0V0nXPV/Escudos-clubes-(9).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Sandro Zahonero Romero / Miguel Ángel García Leal"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Sandro Zahonero Romero / Miguel Ángel García Leal</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Ángel y Sandro representan el verdadero espíritu del club. Desde las categorías más iniciales han crecido defendiendo estos colores y, aún hoy, siguen siendo dos de los jugadores y aficionados más fieles, sin perderse casi ningún partido de las categorías superiores. Su compromiso va más allá del terreno de juego, formando parte de la historia viva del club. Además, Ángel dejó su huella diseñando el escudo actual que hoy nos representa.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/pT8VgTxG/Escudos-clubes-(10).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Isidro Cuesta González / Javier Araque Hernández"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Isidro Cuesta González / Javier Araque Hernández</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Don Isidro Cuerda González, cinturón negro alto grado en kickboxing karate, jiujitsu, y experto en defensa personal policial, y Don Javier Araque Hernández, también uno de los miembros más antiguos del club y cinturón negro 2 dan kickboxing que entrena con sus dos hijos en todas las clases, ambos por sus aportaciones diarias en los entrenamientos demostrando un gran esfuerzo y superación siendo un gran ejemplo para todos sus compañeros en el Club Kickboxing Quart de Poblet.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/1zVyqtgR/Escudos-clubes-(11).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Guillermo Gil Ballester / Pau Aracil Boigues"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Guillermo Gil Ballester / Pau Aracil Boigues</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Al doctor en medicina y médico forense Don Guillermo Gil Ballester y al doctor en medicina y médico cardiólogo del Hospital General de Valencia Don Pau Aracil Boigues. Ambos cinturones negros del Club Shotokan Karate Quart y los dos con el grado de cinturones negros segundos danes de karate. Por compaginar sus trabajos de medicina con los entrenamientos de karate en técnica y katas asiduamente en el tatami del club, demostrando un gran esfuerzo diario de superación y siendo un gran ejemplo para todos sus compañeros del Club Karate Quart.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/jq4tNBjh/Escudos-clubes-(12).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Héctor Martínez García"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Héctor Martínez García</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Su participación en los Campeonatos de España de las temporadas 2024-2025 y 2025-2026 no es fruto del azar, sino del sacrificio diario. Participando en las pruebas de 50m y 100m braza ha llevado el nombre de nuestro club a lo más alto de la natación nacional. Su esfuerzo en cada sesión es el motor que le ha permitido llegar a lo más alto.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/26fNLxRF/Escudos-clubes-(13).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de José Manuel Palma Dobón"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">José Manuel Palma Dobón</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Por toda su ayuda y todos sus éxitos: subcampeón de España de la Real Sociedad Canina Española, 5 veces campeón de España en la Federación Española de Agility y Educación Canina y 9 veces campeón de la Comunidad Valenciana. A su vez, ha representado a nuestro país en numerosas ocasiones.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/h4pNKnjy/Escudos-clubes-(14).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Ángel Guillén López"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Ángel Guillén López</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Desde que era un chavalin viene siguiendo al Club, acompañando a su padre que ha sido jugador y entrenador con lo que le inculcó el gusanillo de jugar en esta entidad. Ya siendo juvenil se incorporó a la disciplina del equipo convirtiéndose en el baluarte y capitán del equipo.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/rmq6Kq7F/Escudos-clubes-(23).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Alexis Cardo"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Alexis Cardo</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Destacar en este deporte de mujeres no es fácil para nadie, pero él haces fácil hasta lo más complejo. Es un deportista entregado a la rítmica, constante, trabajador y que no tiene limites. Una persona que hace disfrutar del proceso de aprendizaje a todos sus entrenadores, y que hace disfrutar al público siempre que te ven durante tus competiciones, siempre dando todo de ti en todo momento. Un camino que está siendo un constante de triunfos y momentos increíbles que estamos viviendo juntos. No sabes la suerte que tienen de tenerte Alexis, no cambies nunca.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/Xqm8XQtG/Escudos-clubes-(16).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Damyan Mongelli"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Damyan Mongelli</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Su trayectoria ejemplar, marcada por la constancia, la disciplina y una inquebrantable motivación personal, ha sido fuente de inspiración para compañeros y nuevas generaciones de deportistas. Damyan representa la esencia del deporte: la humildad en el éxito, el compañerismo en el esfuerzo compartido y la pasión por mejorar cada día. Su actitud positiva, su compromiso con el club y su capacidad para apoyar y motivar a otros hacen de él un modelo a seguir dentro de nuestra comunidad deportiva.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/Dz6P12RP/Escudos-clubes-(17).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Diana Gómez Lierm"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Diana Gómez Lierm</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Apareciste en las vidas de las personas en los inicios de este club, y desde entonces no has dejado de darnos lecciones de vida, de lucha constante rompiendo barreras en el día a día y siendo un ejemplo entre las personas con necesidades especiales o sin ellas, dándonos un montón de alegrías deportivas para todos. Enhorabuena por tu campeonato de España de paratriatlón PTWC2.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/1zvDfvqn/Escudos-clubes-(18).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Pedro Gallo García"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Pedro Gallo García</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Desde los 9 años que apareció por el pabellón, dejó ver sus inquietudes sobre el voleibol, lo que se convirtió en una pasión de la que pasó a ser uno más, y de eso hace ya 31 años. Ha tenido una etapa como jugador pasando por varias categorías; posteriormente, como entrenador durante 9 años, y en la siguiente etapa, formando parte de la gestión del club desde la directiva. Es una persona que no solo valora lo que el voleibol le ha dado, sino lo que puede hacer él por el voleibol de Quart de Poblet.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/52MqLjNL/Escudos-clubes-(19).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de José María (Txema) Flores Martínez"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">José María (Txema) Flores Martínez</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Ejemplo para todos, desde el fatal accidente has luchado por superarte y progresar en tu recuperación. Ahora, la Penya Ciclista de Quart de Poblet quiere homenajearte y desearte que, más pronto que tarde, vuelvas a pedalear con todos nosotros.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/yY001BX6/Escudos-clubes-(20).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Javier de Abreu Rodrigo"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Javier de Abreu Rodrigo</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Por sus excelentes resultados deportivos en las temporadas 2024/2025 donde fue subcampeon de España por equipos de comunidades autonómicas, campeón Autonómico ,campeón provincial y campeón de la liga autonómica, asi como campeón de 3D en la modalidad de arco Tradicional</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105 flex flex-col">
+            <img
+              src="https://i.postimg.cc/1z3FrFxn/Escudos-clubes-(21).png" onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+              alt="Imagen de Francisco Simarro Martínez"
+              class="w-36 h-36 rounded-full mx-auto mb-4 object-cover object-center shadow-md bg-gray-100"
+              onerror="this.onerror=null; this.src='https://placehold.co/300x180/e2e8f0/333333?text=Imagen+no+disponible';"
+            />
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">Francisco Simarro Martínez</h3>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base text-left">Conocido para todos los que formamos la familia de la UD Quart como &quot;el abuelo&quot;, tiene una larga trayectoria en el club colaborando tanto en temas de ayuda a los equipos como en la puerta para el control de acceso. Por su antigüedad como socio, es una persona muy querida para nosotros, por lo que creemos que este homenaje es más que merecido.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="protagonistas" class="py-20 bg-gray-50 page-view hidden">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Homenajes</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">Reconocimiento institucional a figuras y entidades destacadas por su trayectoria, aportación y compromiso con el deporte.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/MGGxtvjH/Maria-Perez.jpg" alt="Foto de María Pérez" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover object-center shadow-md" />
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">María Pérez</h3>
+            <p class="text-gray-600 leading-relaxed">Atleta española especializada en la disciplina de marcha atlética, consagrada como una de las figuras más importantes de la historia del atletismo español. Se convirtió en la reina indiscutible de la marcha mundial al proclamarse doble campeona del mundo en 2023, en las distancias de 20 km y 35 km, y posteriormente tocar el cielo olímpico en los Juegos Olímpicos de París 2024, donde conquistó dos medallas: la medalla de plata en la prueba individual de 20 km y la medalla de oro en el relevo mixto.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/gkpwm7zb/pablo-herrera.avif" alt="Foto de Pablo Herrera" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover object-center shadow-md" />
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">Pablo Herrera</h3>
+            <p class="text-gray-600 leading-relaxed">Legendario jugador de vóley playa español, considerado uno de los grandes referentes de la historia de este deporte a nivel internacional. Se consagró en la élite mundial al conquistar la medalla de plata en los Juegos Olímpicos de Atenas 2004. Tras una larguísima y exitosa carrera, en la que llegó a competir en seis citas olímpicas consecutivas y acumuló múltiples medallas europeas y títulos nacionales, formando una longeva e icónica pareja junto a Adrián Gavira, anunció su retirada del deporte profesional tras disputar los Juegos Olímpicos de París 2024.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/T27SXzqN/Consorcio-Esports-Horta.png" alt="Logo del Consorcio EsportsHorta" class="w-44 h-44 rounded-full mx-auto mb-5 object-contain object-center bg-white p-3 shadow-md" />
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">Consorcio EsportsHorta</h3>
+            <p class="text-gray-600 leading-relaxed">Entidad pública e intermunicipal que agrupa a numerosos ayuntamientos de las comarcas de l'Horta Nord, Sud y Oest, en la provincia de Valencia. Su objetivo principal es coordinar, gestionar y optimizar recursos públicos para promover el deporte de base, la actividad física y los hábitos saludables en la región. El consorcio ha tenido un papel crucial e histórico tras la catástrofe de la DANA, liderando la coordinación de recursos y la captación de fondos esenciales para la reconstrucción urgente de las instalaciones afectadas, devolviendo la actividad a los clubes locales y garantizando la recuperación del tejido deportivo de toda la comarca.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/xd1x7gJR/LOGO-QE-PNG.png" alt="Logo de Quart per l'Esport" class="w-44 h-44 rounded-full mx-auto mb-5 object-contain object-center bg-white p-3 shadow-md" />
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">Quart per l'Esport</h3>
+            <p class="text-gray-600 leading-relaxed">Asociación deportiva de Quart de Poblet especializada en la organización de eventos deportivos y la gestión de fases escolares en el municipio. Este año, la entidad celebra su 25º aniversario, un hito que consolida un cuarto de siglo de trayectoria dedicada a dinamizar el deporte local. Además de actuar como plataforma de dinamización, funciona como el nexo de unión fundamental entre el Ayuntamiento, los clubes de la localidad y la ciudadanía. Su propósito es facilitar el acceso universal a la actividad física, fomentar hábitos de vida saludables, potenciar los valores del asociacionismo y seguir consolidando a Quart de Poblet como referente de gestión deportiva participativa, inclusiva y de calidad.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/y8y6n6cL/sorpresa.png" alt="Imagen homenajeado sorpresa" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover object-center shadow-md" />
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">Homenajeado sorpresa</h3>
+            <p class="text-gray-600 leading-relaxed">Reconocimiento por su contribución al deporte local y por su carácter pionero en su disciplina deportiva.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="participa" class="py-20 bg-white page-view hidden"><div class="container mx-auto px-6"><div class="text-center"><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Participa y Vive la Gala</h2><p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">Durante el evento, podrás participar en nuestro quiz interactivo. ¡Demuestra cuánto sabes!</p><a href="#" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105 shadow-lg">Acceder al Quiz (Próximamente)</a></div></div></section>
+
+
+    <section id="mejores-deportistas" class="py-20 bg-white page-view hidden">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Mejores Deportistas</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto">Reconocimiento a los mejores deportistas masculino y femenino por sus méritos, trayectoria y logros deportivos.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/rmRXfHJP/Gemini-Generated-Image-jkiyujjkiyujjkiy.png" alt="Foto de Piero Gonzalez" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover shadow-md" style="object-position: center 20%;" />
+            <p class="text-orange-600 font-bold uppercase tracking-wide text-sm mb-2">Mejor deportista masculino</p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">Piero Gonzalez</h3>
+            <p class="text-gray-600 leading-relaxed">Piero cuenta con una destacada trayectoria en gimnasia aeróbica, acumulando numerosos éxitos en categorías junior. Entre sus logros principales destacan múltiples primeros puestos en la Copa Federación AER, tanto en 2025 como en 2026, incluyendo la categoría Aerodance, la Fase Autónoma del Campeonato de España, el Open Catalunya L'Alborç y el Open Cunit. A nivel internacional, se coronó campeón de Europa por equipos con la selección española junior, obtuvo el primer lugar en Pareja y Trío Junior en la Suzuki World Cup 2025 en Tokio, un tercer puesto en la edición de 2026, además de un meritorio cuarto puesto en la FIG World Cup Cantanhede.</p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center transform transition duration-500 hover:scale-105">
+            <img src="https://i.postimg.cc/44rLvdjZ/Escudos-clubes-(24).png" alt="Foto de Alba Alonso Revelles" class="w-44 h-44 rounded-full mx-auto mb-5 object-cover object-center shadow-md" />
+            <p class="text-orange-600 font-bold uppercase tracking-wide text-sm mb-2">Mejor deportista femenina</p>
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">Alba Alonso Revelles</h3>
+            <p class="text-gray-600 leading-relaxed">Alba cuenta con una destacada trayectoria en Lucha Olímpica U15, logrando importantes éxitos entre 2024 y 2025. Entre sus logros más significativos destacan el primer puesto en el Campeonato de España sub-17 2025, el subcampeonato en el Campeonato de España sub-20 2025, así como múltiples títulos autonómicos: primer puesto en el Campeonato Autonómico sub-17 en 2024 y Campeonato Autonómico LP sub-17 tanto en 2024 como en 2025. A nivel nacional e internacional, también ha obtenido grandes resultados, incluyendo victorias en el Internacional LP sub-17 2024, podios en torneos como Villa Madrid, San Blas y Barakaldo, donde fue tercera en categoría sénior, además de destacadas posiciones en el Internacional de Jóvenes Promesas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="galeria-post" class="py-20 bg-gray-50 page-view hidden">
+      <div class="container mx-auto px-6">
+        <div class="text-center max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Galería Post-Evento</h2>
+          <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">Revive los mejores momentos de la Gala. Contenido disponible después del evento.</p>
+          <a href="#" class="inline-block bg-orange-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105 shadow-lg">
+            Ver fotos de la Gala
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="ciutat-esportiva" class="py-20 bg-white page-view hidden"><div class="container mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Conoce Quart Ciutat Esportiva</h2><p class="text-lg text-gray-700 max-w-3xl mx-auto">Nuestra labor, iniciativas y pasión por el deporte.</p></div><div class="max-w-5xl mx-auto"><img src="https://i.postimg.cc/yYL4r7hR/INFOGRAFIA-FINAL-CIUTAT.png" alt="Infografía Quart Ciutat Esportiva" class="w-full h-auto rounded-xl shadow-2xl object-contain" /></div></div></section>
+
+    <section id="encuesta" class="py-20 bg-gray-50 page-view hidden"><div class="container mx-auto px-6"><div class="text-center"><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Encuesta de Valoración</h2><p class="text-lg text-gray-700 max-w-3xl mx-auto mb-8">Tu opinión es crucial para mejorar en futuras ediciones. ¡Gracias por participar!</p><a href="#" class="bg-orange-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-orange-600 transition duration-300 transform hover:scale-105 shadow-lg">Realizar Encuesta (Próximamente)</a><p class="text-gray-600 mt-4">[...Aquí se puede incrustar un Google Form o similar...]</p></div></div></section>
+  </main>
+
+  <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('a.nav-link');
+    const pageViews = document.querySelectorAll('.page-view');
+
+    function showView(viewId, targetHash = null) {
+      pageViews.forEach(view => view.classList.add('hidden'));
+      const viewToShow = document.getElementById(viewId) || document.getElementById('view-inicio');
+      viewToShow.classList.remove('hidden');
+      if (mobileMenu) mobileMenu.classList.add('hidden');
+      if (targetHash && viewId === 'view-inicio') {
+        const targetElement = document.querySelector(targetHash);
+        if (targetElement) { targetElement.scrollIntoView({ behavior:'smooth', block:'start' }); return; }
+      }
+      window.scrollTo({ top:0, behavior:'smooth' });
+    }
+
+    if (mobileMenuButton && mobileMenu) mobileMenuButton.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', event => {
+        const viewId = link.dataset.view;
+        const targetHash = link.getAttribute('href');
+        if (!viewId) return;
+        event.preventDefault();
+        showView(viewId, targetHash);
+        if (targetHash) history.pushState(null, '', targetHash);
+      });
+    });
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const initialHash = window.location.hash || '#inicio';
+      const initialLink = document.querySelector(`a.nav-link[href="${initialHash}"]`);
+      if (initialLink && initialLink.dataset.view) showView(initialLink.dataset.view, initialHash);
+      else showView('view-inicio', '#inicio');
+    });
+  </script>
+</body>
+</html>
