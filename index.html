@@ -177,11 +177,11 @@
 
     <section id="bienvenida" class="py-20 bg-gray-50 page-view hidden">
       <div class="container mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Bienvenida Institucional</h2><p class="text-lg text-gray-700 max-w-3xl mx-auto">Mensajes de invitación de nuestros representantes.</p></div>
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-10 mb-16 max-w-7xl mx-auto">
-          <div class="bg-white/90 p-6 md:p-8 rounded-2xl shadow-2xl border border-orange-100 transform transition duration-500 hover:-translate-y-1 hover:shadow-orange-200/60">
-            <h3 class="text-lg lg:text-xl font-semibold text-gray-900 mb-5 text-center leading-snug max-w-full">Mensaje de Cristina Mora, Alcaldesa de Quart de Poblet</h3>
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-10 mb-16 max-w-7xl mx-auto items-stretch">
+          <div class="bg-white/90 p-6 md:p-8 rounded-2xl shadow-2xl border border-orange-100 transform transition duration-500 hover:-translate-y-1 hover:shadow-orange-200/60 h-full flex flex-col">
+            <h3 class="text-lg lg:text-xl font-semibold text-gray-900 mb-5 text-center leading-snug max-w-full min-h-[56px] flex items-center justify-center">Mensaje de Cristina Mora, Alcaldesa de Quart de Poblet</h3>
             <div
-              class="aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-lg ring-4 ring-orange-100 relative group cursor-pointer"
+              class="aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-lg ring-4 ring-orange-100 relative group cursor-pointer w-full"
               onclick="loadDriveVideo(this, 'https://drive.google.com/file/d/14OrqDA8wtgdvL3Ic83rlB8iNrQ-9LsMY/preview', 'Vídeo de bienvenida de la Alcaldesa')"
             >
               <img
@@ -197,16 +197,17 @@
             </div>
           </div>
 
-          <div class="bg-white/90 p-6 md:p-8 rounded-2xl shadow-2xl border border-orange-100 transform transition duration-500 hover:-translate-y-1 hover:shadow-orange-200/60">
-            <h3 class="text-lg lg:text-xl font-semibold text-gray-900 mb-5 text-center leading-snug max-w-full">Mensaje de Juanjo Susín, Concejal de deportes de Quart de Poblet</h3>
+          <div class="bg-white/90 p-6 md:p-8 rounded-2xl shadow-2xl border border-orange-100 transform transition duration-500 hover:-translate-y-1 hover:shadow-orange-200/60 h-full flex flex-col">
+            <h3 class="text-lg lg:text-xl font-semibold text-gray-900 mb-5 text-center leading-snug max-w-full min-h-[56px] flex items-center justify-center">Mensaje de Juanjo Susín, Concejal de deportes de Quart de Poblet</h3>
             <div
-              class="aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-lg ring-4 ring-orange-100 relative group cursor-pointer"
+              class="aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-lg ring-4 ring-orange-100 relative group cursor-pointer w-full"
               onclick="loadDriveVideo(this, 'https://drive.google.com/file/d/1c8knVnC3RvwHsKxqNZN9kQcx_URSqdLN/preview', 'Vídeo de bienvenida del Concejal de Deportes')"
             >
               <img
                 src="https://i.postimg.cc/CxDMvSL5/Foto-Juanjo.jpg"
                 alt="Imagen de Juanjo Susín"
-                class="w-full h-full object-cover object-center transition duration-500 group-hover:scale-105"
+                class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                style="object-position: center 22%;"
               />
               <div class="absolute inset-0 bg-black/25 flex items-center justify-center transition duration-300 group-hover:bg-black/35">
                 <div class="w-20 h-20 rounded-full bg-orange-500 text-white flex items-center justify-center text-4xl shadow-2xl transform transition duration-300 group-hover:scale-110">
