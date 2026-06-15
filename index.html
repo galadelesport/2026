@@ -182,7 +182,7 @@
             <h3 class="text-lg lg:text-xl font-semibold text-gray-900 mb-5 text-center leading-snug max-w-full min-h-[56px] flex items-center justify-center">Mensaje de Cristina Mora, Alcaldesa de Quart de Poblet</h3>
             <div
               class="aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-lg ring-4 ring-orange-100 relative group cursor-pointer w-full"
-              onclick="loadDriveVideo(this, 'https://drive.google.com/file/d/14OrqDA8wtgdvL3Ic83rlB8iNrQ-9LsMY/preview', 'https://drive.google.com/file/d/1G8oYtJtiNBtFcSsDsICajRRvujtucTJ5/preview', 'Vídeo de bienvenida de la Alcaldesa')"
+              onclick="loadDriveVideo(this, 'https://drive.google.com/file/d/14OrqDA8wtgdvL3Ic83rlB8iNrQ-9LsMY/preview', 'https://drive.google.com/uc?export=download&id=1G8oYtJtiNBtFcSsDsICajRRvujtucTJ5', 'Vídeo de bienvenida de la Alcaldesa')"
             >
               <img
                 src="https://i.postimg.cc/CMPK5c6m/Foto-cristina-real.jpg"
@@ -202,7 +202,7 @@
             <h3 class="text-lg lg:text-xl font-semibold text-gray-900 mb-5 text-center leading-snug max-w-full min-h-[56px] flex items-center justify-center">Mensaje de Juanjo Susín, Concejal de deportes de Quart de Poblet</h3>
             <div
               class="aspect-video bg-gray-100 rounded-xl overflow-hidden shadow-lg ring-4 ring-orange-100 relative group cursor-pointer w-full"
-              onclick="loadDriveVideo(this, 'https://drive.google.com/file/d/1c8knVnC3RvwHsKxqNZN9kQcx_URSqdLN/preview', 'https://drive.google.com/file/d/1HrICCtAT_M4M68GMYNxSihM1l9iDDAEI/preview', 'Vídeo de bienvenida del Concejal de Deportes')"
+              onclick="loadDriveVideo(this, 'https://drive.google.com/file/d/1c8knVnC3RvwHsKxqNZN9kQcx_URSqdLN/preview', 'https://drive.google.com/uc?export=download&id=1HrICCtAT_M4M68GMYNxSihM1l9iDDAEI', 'Vídeo de bienvenida del Concejal de Deportes')"
             >
               <img
                 src="https://i.postimg.cc/CxDMvSL5/Foto-Juanjo.jpg"
@@ -645,28 +645,37 @@
 
     function loadDriveVideo(container, desktopVideoUrl, mobileVideoUrl, title) {
       const isMobile = window.matchMedia('(max-width: 640px)').matches;
-      const selectedVideoUrl = isMobile ? mobileVideoUrl : desktopVideoUrl;
-      const autoplayUrl = selectedVideoUrl.includes('?') ? `${selectedVideoUrl}&autoplay=1` : `${selectedVideoUrl}?autoplay=1`;
 
       container.classList.remove('cursor-pointer', 'group');
 
       if (isMobile) {
         container.classList.remove('aspect-video');
         container.classList.add('aspect-[9/16]');
+        container.innerHTML = `
+          <video
+            class="absolute inset-0 w-full h-full object-cover object-center bg-black"
+            controls
+            autoplay
+            playsinline
+            preload="metadata">
+            <source src="${mobileVideoUrl}" type="video/mp4">
+            Tu navegador no soporta la reproducción de vídeo.
+          </video>
+        `;
       } else {
+        const autoplayUrl = desktopVideoUrl.includes('?') ? `${desktopVideoUrl}&autoplay=1` : `${desktopVideoUrl}?autoplay=1`;
         container.classList.remove('aspect-[9/16]');
         container.classList.add('aspect-video');
+        container.innerHTML = `
+          <iframe
+            src="${autoplayUrl}"
+            title="${title}"
+            class="absolute inset-0 w-full h-full border-0 bg-black"
+            allow="autoplay; fullscreen"
+            allowfullscreen>
+          </iframe>
+        `;
       }
-
-      container.innerHTML = `
-        <iframe
-          src="${autoplayUrl}"
-          title="${title}"
-          class="absolute inset-0 w-full h-full border-0 bg-black"
-          allow="autoplay; fullscreen"
-          allowfullscreen>
-        </iframe>
-      `;
     }
 
     const mobileMenuButton = document.getElementById('mobile-menu-button');
